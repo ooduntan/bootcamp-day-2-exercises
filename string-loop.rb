@@ -1,9 +1,9 @@
 name="ikechukwuyeremefuna"
 counter=1;
 splitedNames=name.split("")
- splitedNames.each {
-  |x|
-  x.upcase!
-  puts "#{counter} #{x}"
+ while counter <= splitedNames.length
+
+  splitedNames[(counter-1)].upcase!
+  puts "#{counter} #{splitedNames[(counter-1)]}"
   counter+=1;
-}
+end
